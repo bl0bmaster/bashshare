@@ -4,6 +4,12 @@
 
 Script bash permettant de pousser rapidement des fichiers à envoyer par mail.
 
+    bashshare.sh fihier1.jpg ../fichier2.html ~/répertoire1/
+
+Ou avec l'installation du lien symbolique ci dessous
+ 
+    share fihier1.jpg ../fichier2.html ~/répertoire1/ 
+
 L'idée est de pouvoir en une commande créer une URL de type `https://www.gnagnagna.gna/~kikou/share/07feb7259e0653b2f093d74de2374c67aa55319b21db797cd2a66b705c87488eab452f4870ffa0017f25fe23d5e526a8403fa70e32109be6ba53bfe86b4ec9ab/` permettant d'accéder à tous les fichiers du répertoire. Et de recevoir cette URL directement dans ma boite mail ou je pourrais facilement la réexploiter.
 
 J'ai créer ce script pour pouvoir fabriquer rapidement des répertoires de téléchargements avec une URL discrette pour faire du partage avec un tiers.
