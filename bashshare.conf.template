@@ -1,0 +1,4 @@
+SERVER="le.serveur.sans.protocole.com"
+SHARE_DIRECTORY="public_html/share"
+SHARE_URL="https://le.serveur.sans.protocole.com/~user_du_userdir/share"
+MAIL="tommail@tondomaine.com"
