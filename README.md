@@ -16,12 +16,13 @@ Pour protéger mes URLs j'empêche le listing des différents répertoires de pa
 
 ### client / serveur
 
-Ce script a besoin d'un serveur. Mais rien de compliqué à installé ou à gérer. Pas de langage de script côté serveur que du statique. 
+Ce script a besoin d'un serveur. Mais rien de compliqué à installer ou à gérer. Pas de langage de script côté serveur que du statique. 
 
 ### sur les machines clientes
 
  - la commande scp
  - la commande ssh
+ - et bash bien sûr
 
 Il faut que la clef ssh soit bien configurée pour se connecter au serveur avec le bon login. 
 
@@ -35,10 +36,9 @@ Dans cette page il faut remplacer kikou par le vrai nom de l'utilisateur distant
 
 ```
 sudo apt-get install apache2 libapache2-mod-ldap-userdir
-sudo 
+sudo a2enmod userdir
 mkdir -p /home/kikou/public_html/share
 touch /home/kikou/public_html/share/index.html
-
 ```
 ### mail
 
@@ -50,7 +50,7 @@ Il faut ques les commandes `uuid`, `sha512sum` et `sed` soient présentes sur le
 
 ## installation
 
-Je mets mes scripts un peu complexe dans un répertoire `~/.bin/` et je mets le répertoire `~/bin` dans mon `PATH`.
+Chez moi, je mets mes scripts un peu complexe dans un répertoire `~/.bin/` et je mets le répertoire `~/bin` dans mon `PATH`.
 
 Pour installer bashshare ça me donne les instructions suivantes : 
 
