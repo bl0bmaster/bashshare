@@ -1,6 +1,6 @@
 # Partager pleins de fichiers facilement en toute discrétion
 
-![](./img/logo.svg)
+![](./img/logo.svg){:width="500px"}
 
 ## présentation
 
@@ -88,10 +88,11 @@ Ce script a pour configuration un fichier bash qui sera sourcé.
     $HOME/.config/bashshare.conf
 
 Les variables suivantes doivent y être mises.
-	SERVER="le.serveur.sans.protocole.com"
-	SHARE_DIRECTORY="public_html/share"
-	SHARE_URL="https://le.serveur.sans.protocole.com/~user_du_userdir/share"
-	MAIL="tommail@tondomaine.com"
+
+    SERVER="le.serveur.sans.protocole.com"
+    SHARE_DIRECTORY="public_html/share"
+    SHARE_URL="https://le.serveur.sans.protocole.com/~user_du_userdir/share"
+    MAIL="tommail@tondomaine.com"
     
  
 ## TODO 
