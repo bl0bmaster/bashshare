@@ -78,13 +78,12 @@ le `readlink` du script est là pour permettre toutes les folies (soyons fous) d
 ### ssh
 
 Ce script considère que le lien ssh entre le client et le serveur se fait par clef et que la clef est associée au login correcte. Du coup ce script ne demande aucun credentials.
-Vous trouverez de la doc ici :
-https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
-par exemple.
+Vous trouverez de la doc ![ici](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) par exemple.
 
 ### fichier de config
 
 Ce script a pour configuration un fichier bash qui sera sourcé.
+
     $HOME/.config/bashshare.conf
 
 Les variables suivantes doivent y être mises.
@@ -110,3 +109,4 @@ Les variables suivantes doivent y être mises.
  - déduplication ?
  - un installeur ?
  - réécrire tout ça en Python ?
+ 	
