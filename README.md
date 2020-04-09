@@ -1,5 +1,7 @@
 # Partager pleins de fichiers facilement en toute discrétion
 
+![](img/logo.svg =250x250)
+
 ## présentation
 
 Script bash permettant de pousser rapidement des fichiers à envoyer par mail.
@@ -10,10 +12,14 @@ Ou avec l'installation du lien symbolique ci dessous
  
     share fihier1.jpg ../fichier2.html ~/répertoire1/ 
 
-L'idée est de pouvoir en une commande créer une URL de type `https://www.gnagnagna.gna/~kikou/share/07feb7259e0653b2f093d74de2374c67aa55319b21db797cd2a66b705c87488eab452f4870ffa0017f25fe23d5e526a8403fa70e32109be6ba53bfe86b4ec9ab/` permettant d'accéder à tous les fichiers du répertoire. Et de recevoir cette URL directement dans ma boite mail ou je pourrais facilement la réexploiter.
+Cela dépose les fichiers et répertoires (récursivement) `fihier1.jpg ../fichier2.html ~/répertoire1/` sur le serveur distant.
+Et vous recevez un mail avec de dans une URL de ce type : `https://www.gnagnagna.gna/~kikou/share/07feb7259e0653b2f093d74de2374c67aa55319b21db797cd2a66b705c87488eab452f4870ffa0017f25fe23d5e526a8403fa70e32109be6ba53bfe86b4ec9ab/`.
+
+Cette URL permet d'accéder à tous les fichiers déposés.
+
 
 J'ai créer ce script pour pouvoir fabriquer rapidement des répertoires de téléchargements avec une URL discrette pour faire du partage avec un tiers.
-
+Et de recevoir cette URL directement dans ma boite mail ou je pourrais facilement la réexploiter.
 J'utilise Apache avec le module userdir. Ça permet d'être 100% statique sur le serveur.
 
 Pour protéger mes URLs j'empêche le listing des différents répertoires de partage. L'URL `https://www.gnagnagna.gna/~kikou/share/` retourne une page vide. Les UUID(https://fr.wikipedia.org/wiki/Universal_Unique_Identifier) passés au sha512 étant complexe à deviner mes répertoires sont suffisamment discrets. 
@@ -94,8 +100,12 @@ Les variables suivantes doivent y être mises.
  - tester/adapté pour autre chose que Apache
  - permettre de lister les partages
  - permettre de supprimer les vieux partages
+ - QR code en PJ du mail
+ - documenter le fait que ça restera static sur le serveur
+ - IHM pour noob
  - gérer les `.htaccess` par partage.
  - générer un mini site static pour présenter les fichiers (diaporama...?)
  - permettre d'utiliser d'autres couples clef/login que ceux par défaut ?
+ - déduplication ?
  - un installeur ?
  - réécrire tout ça en Python ?
