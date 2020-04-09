@@ -90,9 +90,12 @@ Les variables suivantes doivent y être mises.
  
 ## TODO 
 
+ - une meilleur documentation
+ - tester/adapté pour autre chose que Apache
  - permettre de lister les partages
  - permettre de supprimer les vieux partages
  - gérer les `.htaccess` par partage.
+ - générer un mini site static pour présenter les fichiers (diaporama...?)
  - permettre d'utiliser d'autres couples clef/login que ceux par défaut ?
  - un installeur ?
  - réécrire tout ça en Python ?
