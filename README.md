@@ -1,6 +1,6 @@
 # Partager pleins de fichiers facilement en toute discrétion
 
-![](img/logo.svg =250x250)
+![](./img/logo.svg)
 
 ## présentation
 
