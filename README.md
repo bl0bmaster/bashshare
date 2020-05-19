@@ -1,6 +1,6 @@
 # Partager pleins de fichiers facilement en toute discrétion
 
-![](./img/logo.svg){:width="500px"}
+![](./img/logo.svg)
 
 ## présentation
 
